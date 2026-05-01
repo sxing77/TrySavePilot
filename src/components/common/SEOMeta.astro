@@ -1,0 +1,28 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const { 
+  title, 
+  description, 
+  image = '/og-image.jpg' // 建议你后续在 public 目录下放一张网站的默认封面图
+} = Astro.props;
+
+// 获取当前页面的完整 URL
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://your-domain.com');
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{title} | 海外华人返利指南</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalURL} />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image, Astro.site || 'https://your-domain.com')} />

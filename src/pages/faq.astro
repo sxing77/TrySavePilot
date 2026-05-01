@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DisclosureBox from '../components/DisclosureBox.astro';
+import { getCollection } from 'astro:content';
+
+const faqs = await getCollection('faqs');
+const categories = {
+  basic: '基础问题',
+  tracking: '追踪问题',
+  payout: '提现与到账',
+  safety: '安全与合规',
+  disclosure: '披露说明'
+};
+---
+
+<BaseLayout
+  title="常见问题"
+  description="整理返利平台最常见的到账、提现、安全和规则问题，方便新手快速查找答案。"
+>
+  <section class="py-12 bg-gray-50 border-b border-gray-200">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
+        常见问题
+      </h1>
+      <p class="text-gray-600 max-w-2xl text-lg leading-relaxed">
+        先把最容易踩坑的问题整理出来，方便你在下单前、等待到账时和准备提现吗时快速查。
+      </p>
+    </div>
+  </section>
+
+  <div class="container mx-auto px-4 py-12 max-w-4xl space-y-8">
+    <DisclosureBox type="standard" />
+
+    {Object.entries(categories).map(([key, label]) => {
+      const items = faqs.filter((item) => item.data.category === key);
+
+      if (!items.length) return null;
+
+      return (
+        <section class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+          <h2 class="text-xl font-bold text-gray-900 mb-4">{label}</h2>
+          <div class="space-y-4">
+            {items.map((item) => (
+              <details class="group border border-gray-100 rounded-lg p-4">
+                <summary class="cursor-pointer list-none font-medium text-gray-800 flex justify-between gap-4">
+                  <span>{item.data.question}</span>
+                  <span class="text-gray-400 transition group-open:rotate-180">▾</span>
+                </summary>
+                <p class="mt-3 text-sm leading-7 text-gray-600">{item.data.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      );
+    })}
+  </div>
+</BaseLayout>

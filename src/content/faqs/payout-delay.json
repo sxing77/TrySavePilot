@@ -1,0 +1,7 @@
+{
+  "id": "payout-delay",
+  "category": "payout",
+  "question": "为什么用了返利网却没有到账？",
+  "answer": "常见原因包括广告拦截、跳转中断、使用了不兼容的优惠码、购买了不参与返利的商品，或者订单后来退货取消。先检查自己的下单路径，再看平台官方说明。",
+  "relatedArticleSlug": "rakuten-guide"
+}

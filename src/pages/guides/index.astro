@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/article/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+// 1. 获取所有教程
+const allGuides = await getCollection('guides');
+
+// 2. 按最后更新时间倒序排列 (最新的在最前面)
+const sortedGuides = allGuides.sort((a, b) => {
+  return new Date(b.data.lastUpdated).valueOf() - new Date(a.data.lastUpdated).valueOf();
+});
+
+// 3. 自动提取所有文章的 tags 并去重，用于侧边栏展示
+const allTags = [...new Set(allGuides.map(guide => guide.data.tags).flat())];
+---
+
+<BaseLayout 
+    title="新手教程" 
+    description="汇集 Rakuten, TopCashback, Honey 等主流返利平台的注册、购物、避坑和提现教程。"
+>
+    <section class="py-12 bg-gray-50 border-b border-gray-200">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                新手教程汇总
+            </h1>
+            <p class="text-gray-600 max-w-2xl text-lg leading-relaxed">
+                从基础概念到高级避坑，这里有你需要知道的关于海外返利的一切。我们承诺不夸大收益，只写看得懂、能照着操作的干货。
+            </p>
+        </div>
+    </section>
+
+    <div class="container mx-auto px-4 py-12 max-w-5xl flex flex-col md:flex-row gap-8">
+        <main class="md:w-3/4">
+            <div class="grid sm:grid-cols-2 gap-6">
+                {sortedGuides.map(guide => (
+                    <ArticleCard
+                        title={guide.data.title}
+                        description={guide.data.description}
+                        lastUpdated={guide.data.lastUpdated}
+                        slug={guide.id}
+                    />
+                ))}
+            </div>
+            
+            {sortedGuides.length === 1 && (
+                <div class="mt-8 p-6 bg-blue-50 text-blue-800 rounded-xl text-sm border border-blue-100 border-dashed text-center">
+                    提示：当前你只在 `src/content/guides` 下写了一篇文章。继续添加 Markdown 文件，它们会自动显示在这里。
+                </div>
+            )}
+        </main>
+
+        <aside class="md:w-1/4 space-y-8">
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                <h3 class="font-bold text-gray-900 mb-4">热门话题</h3>
+                <div class="flex flex-wrap gap-2">
+                    {allTags.map(tag => (
+                        <span class="bg-gray-50 border border-gray-200 text-gray-600 text-xs px-3 py-1.5 rounded-full hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 cursor-pointer transition-colors">
+                            #{tag}
+                        </span>
+                    ))}
+                </div>
+            </div>
+
+            <div class="bg-blue-50 border border-blue-100 rounded-xl p-6 shadow-sm">
+                <h3 class="font-bold text-blue-900 mb-3 flex items-center">🗺️ 建议阅读顺序</h3>
+                <ol class="list-decimal list-inside text-sm text-blue-800 space-y-2.5">
+                    <li>看对比表选定一个平台</li>
+                    <li>阅读该平台的注册购物教程</li>
+                    <li>了解“不到账常见原因”</li>
+                    <li>实战：首次下单拿返利</li>
+                </ol>
+            </div>
+        </aside>
+    </div>
+</BaseLayout>

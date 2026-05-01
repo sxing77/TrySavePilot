@@ -1,0 +1,23 @@
+{
+  "name": "webReturn",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "\"C:\\Users\\cc\\AppData\\Local\\nvm\\v24.15.0\\node.exe\" ./node_modules/astro/bin/astro.mjs dev",
+    "build": "\"C:\\Users\\cc\\AppData\\Local\\nvm\\v24.15.0\\node.exe\" ./node_modules/astro/bin/astro.mjs build",
+    "preview": "\"C:\\Users\\cc\\AppData\\Local\\nvm\\v24.15.0\\node.exe\" ./node_modules/astro/bin/astro.mjs preview",
+    "astro": "\"C:\\Users\\cc\\AppData\\Local\\nvm\\v24.15.0\\node.exe\" ./node_modules/astro/bin/astro.mjs"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.17",
+    "astro": "^6.2.1",
+    "tailwindcss": "^4.2.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.2"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2"
+  }
+}

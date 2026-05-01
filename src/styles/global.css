@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+/* src/styles/global.css */
+@layer base {
+  table {
+    @apply border-collapse w-full;
+  }
+}

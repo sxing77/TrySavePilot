@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "region": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "positioning": {
+      "type": "string"
+    },
+    "officialUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "referralUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "currentBonus": {
+      "default": "请以官方页面为准",
+      "type": "string"
+    },
+    "bonusCondition": {
+      "type": "string"
+    },
+    "payoutMethods": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "payoutCycle": {
+      "type": "string"
+    },
+    "bestFor": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notFor": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cautions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "officialRulesUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "lastUpdated": {
+      "type": "string"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "slug",
+    "region",
+    "positioning",
+    "officialUrl",
+    "payoutMethods",
+    "bestFor",
+    "notFor",
+    "cautions",
+    "officialRulesUrl",
+    "lastUpdated"
+  ]
+}

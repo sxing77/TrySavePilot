@@ -1,0 +1,54 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import DisclosureBox from '../components/DisclosureBox.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+    <div class="bg-gray-50/50 border-b border-gray-100">
+        <div class="container mx-auto px-4 py-8 max-w-3xl">
+            <div class="text-sm text-gray-500 mb-6 flex items-center gap-2">
+                <a href="/" class="hover:text-blue-600 transition-colors">首页</a>
+                <span class="text-gray-400">/</span>
+                <a href="/guides" class="hover:text-blue-600 transition-colors">新手教程</a>
+                <span class="text-gray-400">/</span>
+                <span class="text-gray-900 truncate">{frontmatter.title}</span>
+            </div>
+
+            <header class="mb-2">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight">
+                    {frontmatter.title}
+                </h1>
+                <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500 font-medium">
+                    <span class="bg-white border border-gray-200 px-3 py-1 rounded-full">最后更新：{frontmatter.lastUpdated}</span>
+                    {frontmatter.readingTime && <span class="bg-white border border-gray-200 px-3 py-1 rounded-full">阅读时间：{frontmatter.readingTime}</span>}
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <article class="container mx-auto px-4 py-10 max-w-3xl">
+        <div class="mb-10 space-y-4">
+            {frontmatter.disclosureRequired && (
+                <DisclosureBox type="standard" />
+            )}
+            {frontmatter.officialReminderRequired && (
+                <DisclosureBox type="warning" />
+            )}
+        </div>
+
+        <div class="prose prose-lg prose-blue max-w-none text-gray-700
+                    prose-headings:font-bold prose-headings:text-gray-900 prose-headings:scroll-mt-20
+                    prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
+                    prose-img:rounded-xl prose-img:shadow-sm">
+            <slot />
+        </div>
+        
+        <div class="mt-16 pt-8 border-t border-gray-200">
+            <a href="/guides" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700">
+                ← 返回所有新手教程
+            </a>
+        </div>
+    </article>
+</BaseLayout>

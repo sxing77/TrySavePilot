@@ -1,0 +1,20 @@
+---
+interface Props {
+  type?: 'standard' | 'short' | 'warning';
+}
+
+const { type = 'standard' } = Astro.props;
+
+const contents = {
+  standard: "本文可能包含推荐链接。你通过这些链接注册或消费后，本站可能获得平台奖励，但这不会增加你的成本。返利比例、奖励条件和提现规则可能变化，请以平台官方页面为准。",
+  short: "说明：本文含推荐链接，我可能获得平台奖励；规则以官方页面为准。",
+  warning: "注意：部分平台奖励不是“注册即到账”，通常需要满足合格消费、时间窗口或 cashback 确认等条件。"
+};
+---
+
+<aside class={`p-4 rounded-lg border my-6 text-sm ${type === 'warning' ? 'bg-yellow-50 border-yellow-200 text-yellow-800' : 'bg-gray-50 border-gray-200 text-gray-600'}`}>
+  <div class="flex gap-2">
+    {type === 'warning' ? <span class="text-lg">💡</span> : <span class="text-lg">ℹ️</span>}
+    <p>{contents[type]}</p>
+  </div>
+</aside>

@@ -1,0 +1,21 @@
+{
+  "id": "rakuten",
+  "name": "Rakuten",
+  "slug": "rakuten-guide",
+  "region": ["美国", "加拿大"],
+  "positioning": "最适合新手的综合返利平台",
+  "officialUrl": "https://www.rakuten.com/r/GABRIE57008",
+  "currentBonus": "请以官方页面为准",
+  "bonusCondition": "通常需要满足官方活动条件和合格消费，请以官方页面为准",
+  "payoutMethods": ["PayPal", "支票"],
+  "payoutCycle": "请以官方页面为准",
+  "bestFor": ["网购新手", "追求到账稳定"],
+  "notFor": ["极客比价用户"],
+  "cautions": [
+    "奖励规则可能变化，请以官方页面为准",
+    "部分活动需要合格消费后才会生效",
+    "优惠码、退货和浏览器拦截插件可能影响追踪"
+  ],
+  "officialRulesUrl": "https://www.rakuten.com/help/article/how-it-works-360002101988",
+  "lastUpdated": "2026-05-01"
+}

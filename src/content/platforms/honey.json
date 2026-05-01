@@ -1,0 +1,21 @@
+{
+  "id": "honey",
+  "name": "Honey",
+  "slug": "honey-guide",
+  "region": ["美国"],
+  "positioning": "自动找券和优惠码工具",
+  "officialUrl": "https://www.joinhoney.com/ref/6ckfyps",
+  "currentBonus": "请以官方页面为准",
+  "bonusCondition": "不同活动和商家规则可能不同，请以官方页面为准",
+  "payoutMethods": ["自动找券", "优惠码", "浏览器插件"],
+  "payoutCycle": "请以官方页面为准",
+  "bestFor": ["只想自动找优惠券的人", "常用浏览器下单的人"],
+  "notFor": ["把它当现金返利平台的人", "需要统一提现的人"],
+  "cautions": [
+    "Honey 更像省钱插件，不是传统 cashback 平台",
+    "优惠码是否生效取决于商家规则",
+    "它适合作为辅助工具，不一定替代返利网"
+  ],
+  "officialRulesUrl": "https://www.joinhoney.com",
+  "lastUpdated": "2026-05-01"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "topcashback",
+  "name": "TopCashback",
+  "slug": "topcashback-guide",
+  "region": ["美国", "英国"],
+  "positioning": "更偏高返利率的返现平台",
+  "officialUrl": "https://www.topcashback.com",
+  "currentBonus": "请以官方页面为准",
+  "bonusCondition": "通常需要满足官方活动和合格消费，请以官方页面为准",
+  "payoutMethods": ["PayPal", "礼品卡", "银行转账"],
+  "payoutCycle": "请以官方页面为准",
+  "bestFor": ["更在意返利率的人", "愿意自己比价的人"],
+  "notFor": ["只想一步到位的新手", "不愿意研究活动规则的人"],
+  "cautions": [
+    "返利数字不等于最终到账，仍要看订单是否符合条件",
+    "优惠码、退货和浏览器拦截插件可能影响追踪",
+    "不同时间的活动奖励会变化，请以官方页面为准"
+  ],
+  "officialRulesUrl": "https://www.topcashback.com/tellafriend",
+  "lastUpdated": "2026-05-01"
+}

@@ -1,0 +1,14 @@
+import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
+import tailwindcss from '@tailwindcss/vite';
+
+const site = process.env.SITE_URL ?? 'http://localhost:4321';
+
+// https://astro.build/config
+export default defineConfig({
+  site,
+  integrations: [sitemap()],
+  vite: {
+    plugins: [tailwindcss()]
+  }
+});

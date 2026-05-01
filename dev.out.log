@@ -1,0 +1,160 @@
+
+> webReturn@0.0.1 dev
+> "C:\Users\cc\AppData\Local\nvm\v24.15.0\node.exe" ./node_modules/astro/bin/astro.mjs dev
+
+[vite] connected.
+[2m19:44:38[22m [34m[types][39m Generated [2m1ms[22m
+[vite] connected.
+[2m19:44:38[22m [34m[content][39m Syncing content
+[2m19:44:38[22m [34m[content][39m Astro config changed
+[2m19:44:38[22m [34m[content][39m Clearing content store
+[33m[1m19:44:38[22m [WARN] [glob-loader][39m No files found matching "**/*.json" in directory "src\content\faqs"
+[2m19:44:38[22m [34m[content][39m Synced content
+[2m19:44:38[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
+[42m[1m astro [22m[49m [32mv6.2.1[39m [2mready in[22m 1490 [2mms[22m
+[2m┃[22m Local    [36mhttp://localhost:4321/[39m
+[2m┃[22m Network  [2muse --host to expose[22m
+[2m19:44:38[22m [32mwatching for file changes...[39m
+[2m19:44:56[22m [34m[200][39m /compare [2m55ms[22m
+[2m19:47:20[22m [34m[200][39m /robots.txt [2m1ms[22m
+[2m19:47:20[22m [33m[404][39m /sitemap-index.xml [2m4ms[22m
+[2m19:47:27[22m [33m[404][39m /sitemap.xml [2m1ms[22m
+[vite] program reload
+[vite] An error happened during full reload
+Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?
+Error: Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?
+    at loadAndTransform (file:///D:/giteeWorkspace/webReturn/node_modules/vite/dist/node/chunks/config.js:22663:33)
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[2m19:50:55[22m [34m[200][39m / [2m38ms[22m
+[2m19:50:55[22m [34m[200][39m /robots.txt [2m1ms[22m
+[2m19:50:55[22m [34m[200][39m /compare [2m18ms[22m
+[2m19:52:54[22m [34m[200][39m / [2m2ms[22m
+[2m19:52:54[22m [33m[404][39m /favicon.svg [2m1ms[22m
+[2m19:52:58[22m [34m[200][39m /compare [2m2ms[22m
+[33m[1m19:53:03[22m [WARN] [router][39m A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/guides/rakuten`.
+
+Possible dynamic routes being matched: src/pages/guides/[slug].astro.
+[2m19:53:03[22m [33m[404][39m /guides/rakuten [2m1ms[22m
+[33m[1m19:53:11[22m [WARN] [router][39m A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/guides/topcashback-guide`.
+
+Possible dynamic routes being matched: src/pages/guides/[slug].astro.
+[2m19:53:11[22m [33m[404][39m /guides/topcashback-guide [2m0ms[22m
+[vite] program reload
+[2m19:55:23[22m [34m[glob-loader][39m Reloaded data from [32mrakuten-guide.md[39m
+[2m19:55:23[22m [34m[glob-loader][39m Reloaded data from [32mhoney-guide.md[39m
+[2m19:55:23[22m [34m[glob-loader][39m Reloaded data from [32mrakuten-vs-topcashback.md[39m
+[2m19:55:23[22m [34m[glob-loader][39m Reloaded data from [32mtopcashback-guide.md[39m
+[2m19:55:23[22m [34m[glob-loader][39m Reloaded data from [32mhoney.json[39m
+[2m19:55:23[22m [34m[glob-loader][39m Reloaded data from [32mtopcashback.json[39m
+[vite] program reload
+[2m19:55:36[22m [34m[200][39m /faq [2m31ms[22m
+[2m19:55:36[22m [34m[200][39m /guides/ [2m65ms[22m
+[2m19:55:36[22m [34m[200][39m /guides/topcashback-guide [2m16ms[22m
+[2m19:55:36[22m [34m[200][39m /guides/honey-guide [2m2ms[22m
+[2m19:55:36[22m [34m[200][39m /guides/rakuten-vs-topcashback [2m2ms[22m
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[2m19:56:04[22m [34m[glob-loader][39m Reloaded data from [32mrakuten.json[39m
+[2m19:56:04[22m [34m[glob-loader][39m Reloaded data from [32mtopcashback.json[39m
+[2m19:56:04[22m [34m[glob-loader][39m Reloaded data from [32mhoney.json[39m
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[2m19:56:04[22m [34m[watch][39m /src/styles/global.css
+[2m19:56:23[22m [34m[200][39m /faq [2m24ms[22m
+[2m19:56:23[22m [34m[200][39m /compare [2m15ms[22m
+[vite] program reload
+[2m19:56:40[22m [34m[watch][39m /src/styles/global.css
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[2m19:59:52[22m [34m[200][39m / [2m35ms[22m
+[2m19:59:56[22m [34m[200][39m /guides/topcashback-guide [2m16ms[22m
+[2m19:59:58[22m [34m[200][39m /guides [2m13ms[22m
+[33m[1m20:00:01[22m [WARN] [router][39m A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/guides/undefined`.
+
+Possible dynamic routes being matched: src/pages/guides/[slug].astro.
+[2m20:00:01[22m [33m[404][39m /guides/undefined [2m1ms[22m
+[33m[1m20:01:51[22m [WARN] [router][39m A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/guides/undefined`.
+
+Possible dynamic routes being matched: src/pages/guides/[slug].astro.
+[2m20:01:51[22m [33m[404][39m /guides/undefined [2m0ms[22m
+[33m[1m20:01:53[22m [WARN] [router][39m A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/guides/undefined`.
+
+Possible dynamic routes being matched: src/pages/guides/[slug].astro.
+[2m20:01:53[22m [33m[404][39m /guides/undefined [2m0ms[22m
+[33m[1m20:01:56[22m [WARN] [router][39m A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/guides/undefined`.
+
+Possible dynamic routes being matched: src/pages/guides/[slug].astro.
+[2m20:01:56[22m [33m[404][39m /guides/undefined [2m0ms[22m
+[2m20:02:00[22m [34m[200][39m / [2m2ms[22m
+[2m20:02:06[22m [34m[200][39m /guides [2m1ms[22m
+[vite] program reload
+[2m20:04:28[22m [34m[watch][39m /src/styles/global.css
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[2m20:04:29[22m [34m[200][39m /guides [2m37ms[22m
+[2m20:05:01[22m [34m[watch][39m /src/styles/global.css
+[2m20:05:01[22m [34m[200][39m /guides [2m18ms[22m
+[vite] program reload
+[vite] program reload
+[2m20:05:14[22m [34m[200][39m /guides [2m44ms[22m
+[2m20:05:14[22m [34m[200][39m /guides [2m25ms[22m
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[2m20:05:26[22m [34m[200][39m /guides [2m9ms[22m
+[2m20:05:27[22m [34m[200][39m /guides/honey-guide [2m11ms[22m
+[2m20:05:37[22m [34m[200][39m /guides [2m2ms[22m
+[2m20:07:13[22m [34m[200][39m /guides/rakuten-vs-topcashback [2m2ms[22m
+[2m20:07:29[22m [34m[200][39m /guides [2m2ms[22m
+[2m20:07:33[22m [34m[200][39m /compare [2m20ms[22m
+[2m20:07:36[22m [34m[200][39m /guides [2m2ms[22m
+[2m20:07:37[22m [34m[200][39m /faq [2m14ms[22m
+[2m20:09:05[22m [34m[200][39m /guides [2m1ms[22m
+[2m20:09:09[22m [34m[200][39m /compare [2m2ms[22m
+[2m20:09:11[22m [34m[200][39m / [2m14ms[22m
+[2m20:09:15[22m [34m[200][39m /compare [2m2ms[22m
+[2m20:09:18[22m [34m[200][39m /guides/honey-guide [2m1ms[22m
+[vite] program reload
+[2m20:31:50[22m [34m[glob-loader][39m Reloaded data from [32mhoney.json[39m
+[vite] program reload
+[2m20:31:51[22m [34m[200][39m /guides/honey-guide [2m10ms[22m
+[vite] program reload
+[2m20:31:54[22m [34m[glob-loader][39m Reloaded data from [32mhoney-guide.md[39m
+[2m20:31:54[22m [34m[200][39m /guides/honey-guide [2m9ms[22m
+[vite] program reload
+[2m20:31:55[22m [34m[200][39m /guides/honey-guide [2m7ms[22m
+[2m20:32:41[22m [34m[200][39m /guides/rakuten-guide [2m1ms[22m
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[2m20:32:48[22m [34m[200][39m /guides/rakuten-guide [2m10ms[22m
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[2m20:38:10[22m [34m[glob-loader][39m Reloaded data from [32mrakuten.json[39m
+[vite] program reload
+[2m20:38:11[22m [34m[200][39m /guides/rakuten-guide [2m9ms[22m
+[vite] program reload
+[2m20:38:29[22m [34m[glob-loader][39m Reloaded data from [32mrakuten-guide.md[39m
+[vite] program reload
+[2m20:38:29[22m [34m[200][39m /guides/rakuten-guide [2m10ms[22m
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[2m20:38:36[22m [34m[200][39m /guides/rakuten-guide [2m10ms[22m
+[vite] program reload
+[vite] program reload
+[2m20:39:16[22m [34m[200][39m /guides/topcashback-guide [2m8ms[22m
+[2m21:45:23[22m [34m[200][39m / [2m10ms[22m

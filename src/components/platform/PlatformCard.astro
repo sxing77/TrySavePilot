@@ -1,0 +1,21 @@
+---
+interface Props {
+    name: string;
+    positioning: string;
+    badge: string;
+    link: string;
+}
+
+const { name, positioning, badge, link } = Astro.props;
+---
+
+<div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
+    <div class="flex justify-between items-start mb-4">
+        <h3 class="text-xl font-bold text-gray-900">{name}</h3>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-1 rounded-full">{badge}</span>
+    </div>
+    <p class="text-gray-600 text-sm mb-6 h-10">{positioning}</p>
+    <a href={link} class="text-blue-600 font-medium hover:underline text-sm flex items-center">
+        查看教程 <span class="ml-1">→</span>
+    </a>
+</div>
