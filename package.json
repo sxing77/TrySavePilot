@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "\"C:\\Users\\cc\\AppData\\Local\\nvm\\v24.15.0\\node.exe\" ./node_modules/astro/bin/astro.mjs dev",
-    "build": "\"C:\\Users\\cc\\AppData\\Local\\nvm\\v24.15.0\\node.exe\" ./node_modules/astro/bin/astro.mjs build",
-    "preview": "\"C:\\Users\\cc\\AppData\\Local\\nvm\\v24.15.0\\node.exe\" ./node_modules/astro/bin/astro.mjs preview",
-    "astro": "\"C:\\Users\\cc\\AppData\\Local\\nvm\\v24.15.0\\node.exe\" ./node_modules/astro/bin/astro.mjs"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
